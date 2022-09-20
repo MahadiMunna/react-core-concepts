@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.person{
+  background-color: darkcyan;
+  border: 3px solid rebeccapurple;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px
+}
+.friend{
+  background-color: darkgoldenrod;
+  border: 3px solid rgb(66, 51, 153);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px
+}
