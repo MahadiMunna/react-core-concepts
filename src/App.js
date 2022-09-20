@@ -10,10 +10,15 @@ const singerStyle = {
 }
 
 function App() {
+  const heros = ['Naruto','Sasuke','Minato']
   return (
     <div className="App">
-      <Person name="Naruto" crush="Sakura"></Person>
-      <Person name="Uzumaki" crush="Hinata"></Person>
+      {
+        heros.map(hero =><Person name={hero}></Person>)
+      }
+
+      {/* <Person name={heros[0]} crush="Sakura"></Person>
+      <Person name={heros[1]} crush="Hinata"></Person> */}
       <h3>New Component Friend</h3>
       <Friend name="Sasuke Uchiha" wife="Sakura"></Friend>
       <Friend name="Minato" wife="Kushino"></Friend>
