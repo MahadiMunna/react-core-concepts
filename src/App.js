@@ -12,30 +12,33 @@ const singerStyle = {
 function App() {
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
+      <Person name="Naruto" crush="Sakura"></Person>
+      <Person name="Uzumaki" crush="Hinata"></Person>
       <h3>New Component Friend</h3>
-      <Friend></Friend>
+      <Friend name="Sasuke Uchiha" wife="Sakura"></Friend>
+      <Friend name="Minato" wife="Kushino"></Friend>
     </div>
   );
 }
 
 // similar in look, different in data
 
-function Person() {
+function Person(props) {
+  console.log(props)
   return (
     <div className='person'>
-      <h1>Naruto Uzumaki</h1>
+      <h1>{props.name}</h1>
+      <h3>{props.crush}</h3>
       <p>Special: rasengen, Shadow clone</p>
     </div>
   )
 }
 
-function Friend(){
+function Friend(props){
   return(
     <div className='friend'>
-      <h3>Name: Sasuke Uchiha</h3>
-      <p>Special: Chidori</p>
+      <h1>{props.name}</h1>
+      <h3>{props.wife}</h3>
     </div>
   )
 }
